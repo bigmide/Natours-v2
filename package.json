@@ -1,0 +1,23 @@
+{
+  "name": "natours-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigmide/Natours-v2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bigmide/Natours-v2/issues"
+  },
+  "homepage": "https://github.com/bigmide/Natours-v2#readme",
+  "devDependencies": {
+    "sass": "^1.59.3"
+  }
+}
