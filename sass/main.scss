@@ -11,6 +11,14 @@
 
 @use "components/button";
 @use "components/composition";
+@use "components/feature-box";
+@use "components/card";
+@use "components/story";
+@use "components/bg-video";
+@use "components/form";
+@use "components/popup";
 
+@use "layouts/navigation";
 @use "layouts/header";
+@use "layouts/footer";
 @use "layouts/grid";
