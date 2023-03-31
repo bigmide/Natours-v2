@@ -5,8 +5,17 @@
   max-width: variables.$grid-width;
   margin: 0 auto;
 
+  @include mixins.respondMax(variables.$tablet-portrait) {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+
   &:not(:last-child) {
     margin-bottom: variables.$gutter-vertical;
+
+    @include mixins.respondMax(variables.$tablet-portrait) {
+      margin-bottom: variables.$gutter-vertical-small;
+    }
   }
 
   @include mixins.clearfix;
@@ -16,6 +25,15 @@
 
     &:not(:last-child) {
       margin-right: variables.$gutter-horizontal;
+
+      @include mixins.respondMax(variables.$tablet-portrait) {
+        margin-right: 0;
+        margin-bottom: variables.$gutter-vertical-small;
+      }
+    }
+
+    @include mixins.respondMax(variables.$tablet-portrait) {
+      width: 100% !important;
     }
   }
 

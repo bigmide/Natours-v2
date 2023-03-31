@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 .popup {
   height: 100vh;
@@ -35,6 +36,12 @@
     &__left {
       width: 33.3333333%;
       display: table-cell;
+
+      @include mixins.respondMax(variables.$tablet-landscape) {
+        display: block;
+        width: 100%;
+        height: 33.33333%;
+      }
     }
 
     // .popup__right
@@ -44,6 +51,12 @@
       display: table-cell;
       vertical-align: middle;
       padding: 3rem 5rem;
+
+      @include mixins.respondMax(variables.$tablet-landscape) {
+        display: block;
+        width: 100%;
+        height: 66.666667%;
+      }
     }
 
     // .popup__img
@@ -51,6 +64,12 @@
     &__img {
       display: block;
       width: 100%;
+
+      @include mixins.respondMax(variables.$tablet-landscape) {
+        display: inline-block;
+        width: 45%;
+        padding: 4rem 0 2rem 3rem;
+      }
     }
 
     // .popup__text

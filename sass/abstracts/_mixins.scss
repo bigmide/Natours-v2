@@ -5,3 +5,32 @@
     clear: both;
   }
 }
+
+// Media Query Manager
+/*
+0 - 600 : phone
+600 - 900 : tablet portrait
+900 - 1200 : tablet landscape
+1200 - 1800: where our normal styles apply
+1800+ : big desktop
+*/
+
+// breakpoint argument choice
+/*
+- phone
+- tab-port
+- tab-land
+- big-desk
+*/
+
+@mixin respondMax($breakpoint) {
+  @media (max-width: calc($breakpoint / 16px * 1em)) {
+    @content;
+  }
+}
+
+@mixin respondMin($breakpoint) {
+  @media (min-width: calc($breakpoint / 16px * 1em)) {
+    @content;
+  }
+}
